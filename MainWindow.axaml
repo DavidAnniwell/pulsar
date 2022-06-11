@@ -1,0 +1,92 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
+        x:Class="PulsarUIMock.MainWindow"
+        Title="Pulsar UI Mock"
+        Background="Black">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto" Margin="30"  HorizontalAlignment="Center">
+        <TextBlock Grid.Row="0" Grid.Column="0">2022-06-11 15:12:48</TextBlock>
+        <Grid Grid.Row="1" Grid.Column="0" RowDefinitions="Auto" ColumnDefinitions="Auto,Auto" HorizontalAlignment="Center">
+            <Border BorderBrush="White" BorderThickness="2" Grid.Row="0" Grid.Column="0">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto" HorizontalAlignment="Stretch" Width="500" Height="550">
+                </Grid>
+            </Border>
+            <Border BorderBrush="White" BorderThickness="2" Grid.Row="0" Grid.Column="1">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto" HorizontalAlignment="Stretch" Width="500" Height="550">
+                </Grid>
+            </Border>
+        </Grid>
+        <TextBlock Grid.Row="2" Grid.Column="0">Current Config Here</TextBlock>
+        <Grid Grid.Row="3" Grid.Column="0" RowDefinitions="Auto"
+              ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" HorizontalAlignment="Stretch">
+            <Grid.Styles>
+                <Style Selector="Button">
+                    <Setter Property="Margin" Value="3" />
+                </Style>
+            </Grid.Styles>
+            <Button Grid.Row="0" Grid.Column="0" Name="F1" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center" Foreground="White" FontSize="14">F1</TextBlock>
+                    <TextBlock TextAlignment="Center">Help</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1" Name="F2" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F2</TextBlock>
+                    <TextBlock TextAlignment="Center">Queue</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Name="F3" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F3</TextBlock>
+                    <TextBlock TextAlignment="Center">Cancel</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3" Name="F4" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F4</TextBlock>
+                    <TextBlock TextAlignment="Center">Swap</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4" Name="F5" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F5</TextBlock>
+                    <TextBlock TextAlignment="Center">Pause</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="5" Name="F6" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F6</TextBlock>
+                    <TextBlock TextAlignment="Center">Start</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="6" Name="F7" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F7</TextBlock>
+                    <TextBlock TextAlignment="Center">Setup</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="7" Name="F8" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F8</TextBlock>
+                    <TextBlock TextAlignment="Center">Abort</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="8" Name="F9" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F9</TextBlock>
+                    <TextBlock TextAlignment="Center">Clear</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="9" Name="F10" Width="100" HorizontalContentAlignment="Center" Background="Gray">
+                <StackPanel>
+                    <TextBlock TextAlignment="Center">F10</TextBlock>
+                    <TextBlock TextAlignment="Center">READY</TextBlock>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+    
+</Window>
